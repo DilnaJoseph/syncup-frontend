@@ -270,7 +270,7 @@ export default function Authpage({  type }: AuthPageProps) {
         {/* Left decorative panel */}
         <div className="left-panel">
           <img
-            src="pic.jpeg"
+            src="/pic.jpeg"
             alt="Background artwork"
             className="artwork-img"
           />
@@ -331,7 +331,7 @@ export default function Authpage({  type }: AuthPageProps) {
             <div className="divider">or continue with</div>
 
             <button className="google-btn" aria-label="Continue with Google">
-              <img src = " google.png" alt="Google" style={{ height: "25px",width: "auto" }}/>
+              <img src = "/google.png" alt="Google" style={{ height: "25px",width: "auto" }}/>
             </button>
 
             <p className="signup-text">
