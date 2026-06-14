@@ -110,6 +110,27 @@ export default function MyProjectsPage() {
           flex-direction: column;
           gap: 16px;
         }
+        .mp-profile-row {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+        .mp-manage-btn {
+          background: rgba(31,31,52,0.4);
+          border: 1px solid #fff;
+          border-radius: 40px;
+          box-shadow: 0 4px 4px #00000040;
+          padding: 7px 18px;
+          font-family: 'Actor', sans-serif;
+          font-size: 15px;
+          color: #fff;
+          cursor: pointer;
+          white-space: nowrap;
+          transition: background 0.2s;
+        }
+        .mp-manage-btn:hover {
+          background: rgba(31,31,52,0.7);
+        }
         .mp-skeleton {
           background: rgba(255,255,255,0.18);
           border-radius: 8px;
@@ -373,9 +394,15 @@ export default function MyProjectsPage() {
         <div className="mp-top-row">
           <div className="mp-card">
             <div className="mp-card-title">Projects on my profile</div>
-            <div className="mp-inner-box" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px" }}>
-              {Array.from({ length: 8 }).map((_, i) => (
-                <div key={i} className="mp-skeleton" style={{ width: "100%", height: 38, borderRadius: 10 }} />
+            <div className="mp-inner-box">
+              {Array.from({ length: 4 }).map((_, i) => (
+                <div key={i} className="mp-profile-row">
+                  <div className="mp-skeleton" style={{ flex: 1.5, height: 41 }} />
+                  <div className="mp-skeleton" style={{ flex: 1, height: 41 }} />
+                  <button className="mp-manage-btn" onClick={() => router.push("/projects/manage/campus-event-app")}>
+                    manage
+                  </button>
+                </div>
               ))}
             </div>
           </div>
