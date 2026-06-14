@@ -7,10 +7,10 @@ const navItems = [
   { label: "Dashboard",       href: "/dashboard" },
   { label: "Browse Projects", href: "/browse" },
   { label: "My projects",     href: "/projects" },
-  { label: "Applications",     href: "/applications" },
+  { label: "Applications",     href: "/applications_page" },
   { label: "Messages",        href: "/messages" },
   { label: "My profile",      href: "/profile" },
-  { label: "Settings",        href: "/settings" },
+  { label: "Settings",        href: "/settings_page" },
 ];
 
 export default function Sidebar() {
